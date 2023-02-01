@@ -2,6 +2,7 @@ import React from "react";
 
 
 const Contact = () => {
+
   return (
     <section className="bg-secondery px-5 py-32" id="contact">
       <div className="text-center md:w-[60%] mx-auto text-white">
@@ -12,9 +13,10 @@ const Contact = () => {
           Reach out to me for collaborations!
         </p>
 
-    <form id="contact-form" action="https://formsubmit.co/el/kopeva" method="POST">
+    <form id="contact-form" action="https://formspree.io/f/meqwevgr" method="POST">
         <div className="my-4">
           <input maxLength="12" className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" type="text" placeholder="Name" name="name"/>
+          <input type="hidden" name="_captcha" value="false"/>
         </div>
         <div className="mb-4">
             <input maxLength="50" className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" type="email" placeholder="Your Email" name="email" />

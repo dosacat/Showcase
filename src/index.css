@@ -4,23 +4,23 @@
 
 /* color */
 .bg-primary {
-    background: #1c0119;
+    background: #f44336;
 }
 
 .bg-secondery {
-    background: #1E293B;
+    background: white;
 }
 
 .bg-accent {
-    background: #7477FF;
+    background: #b2102f;
 }
 
 .text-accent {
-    color: #7477FF;
+    color:white;
 } 
 
 nav li a:hover {
-    color: #7477FF;
+    color: #b2102f;
 }
 
 /* hero */
@@ -28,3 +28,40 @@ h1 {
     font-family: 'Pacifico';
     line-height: 1.5 !important;
 }
+
+.hero-img{
+    animation-duration: 1.5s;
+    animation-name: slidein;
+    animation-iteration-count: 1
+
+}
+
+ @keyframes slidein {
+    from {
+      /* margin-left: 100%; */
+      transform: translateX(+100%);
+    }
+  
+    to {
+      margin-left: 0%;
+     }
+    }
+
+@keyframes fade-out {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 0.5;
+    }
+    to {
+        opacity: 1;
+    }
+    }
+
+.about-img{
+    animation: fade-out 3s;
+    animation-iteration-count: 1;
+    animation-delay: 4.5s;
+    
+    }

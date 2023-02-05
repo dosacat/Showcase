@@ -35,7 +35,7 @@ const Projects = () => {
     <section className="bg-primary text-white px-5 py-32" id="projects">
       <div className="container mx-auto grid md:grid-cols-2 items-center md:justify-between">
         <div className="about-info mb-5">
-          <h2 className="text-4xl font-bold mb-5 border-b-[5px] w-[180px] border-indigo-600 pb-2">
+          <h2 className="text-4xl font-bold mb-5 border-b-[5px] w-[180px] border-[#b2102f] pb-2">
             Projects
           </h2>
 
@@ -50,9 +50,9 @@ const Projects = () => {
       <div className="projects container mx-auto grid md:grid-cols-3 gap-10">
         {projects.map((project, i) => {
           return (
-            <div className="relative" key={i}>
-              <img src={project.img} alt={project.title} className="object-cover h-80 w-96"/>
-              <div className="flex justify-center items-center absolute top-0 right-0 left-0 bottom-0 my-5 mx-auto w-[80%] h-[80%]  bg-primary  opacity-0 duration-500 justify-center flex-col hover:opacity-100 ">
+            <div className="relative " key={i}>
+              <img src={project.img} alt={project.title} className="object-cover h-80 w-96 rounded-lg"/>
+              <div className="max-sm:mx-4 mx-8 flex rounded-lg  justify-center items-center absolute top-0 right-0 left-0 bottom-0 my-5 w-[80%] h-[80%]  bg-[#aa2e25]  opacity-0 duration-500 flex-col hover:opacity-100 ">
                 <p className="py-5 text-center font-bold px-2 text-white">
                   {project.desc}
                 </p>
@@ -60,13 +60,13 @@ const Projects = () => {
                 <div className="mx-auto">
                   <a
                     href={project.live}
-                    className="px-5 py-2 bg-blue-500 hover:bg-blue-600 mr-5 font-bold"
+                    className="px-5 py-2 bg-pink-500 hover:bg-pink-600 mr-5 font-bold"
                   >
                     Live
                   </a>
                   <a
                     href={project.code}
-                    className="px-5 py-2 bg-blue-700 hover:bg-blue-800 font-bold"
+                    className="px-5 py-2 bg-rose-500 hover:bg-rose-600 font-bold"
                   >
                     Code
                   </a>

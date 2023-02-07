@@ -9,8 +9,8 @@ const projects = [
       img: Curate,
       title: "Curate.io",
       desc: "MERN Stack application to curate reads.",
-      live: "https://curator-io.onrender.com/",
-      code: "https://curator-io.onrender.com/#/home",
+      live: "https://curator-io.onrender.com/#/home",
+      code: "https://github.com/dosacat/BlogSaver",
     },
     {
       img: Dashboard,

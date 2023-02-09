@@ -8,7 +8,7 @@ const Hero = () => {
     <section className="flex bg-primary px-10 text-neutral-900 font-semibold py-32 max-md:flex-col">
       <div className="container mx-auto grid md:grid-cols-1 items-center justify-center md:justify-between w-2/3">
         <div className="hero-info pb-5 md:pb-0">
-          <h1 className="items-center justify-center justify-between text-xl lg:text-4xl">
+          <h1 className="font-semibold items-center justify-center justify-between text-xl lg:text-4xl">
             Hi, <br /> 
             I'm a former Bosch engineer <br />
             turned software developer.
